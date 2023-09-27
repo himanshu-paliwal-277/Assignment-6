@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Assignment-6 Q 1</title>
+    <style>
+        /* This is Internal CSS */
+        #Internal_css{
+            background-color: green;
+            color: white;
+            width: 33%;
+            text-align: center;
+            float: left;
+        }
+
+        .heading{
+        background-color: green;
+        padding: 30px;
+        color: white;
+        text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- There are 3 ways to use CSS in HTML document:
+        1. Inline CSS
+        2. Internal CSS
+        3. External CSS
+     -->
+     <h1>There are 3 ways to use CSS in HTML document:</h1>
+        <h3>1. Inline CSS</h3>
+        <h3>2. Internal CSS</h3>
+        <h3>3. External CSS</h3>
+    <div>
+        <!-- Inline CSS -->
+        <h1 style="background-color: red; color: white; width: 33%; text-align: center; float: left;">This is Inline CSS</h1>
+    </div>
+    <div>
+        <!-- Internal CSS -->
+        <h1 id="Internal_css">This is Internal CSS</h1>
+    </div>
+    <div>
+        <!-- External CSS -->
+        <h1 id="External_css">This is External CSS</h1>
+    </div>
+    <br><br><br><br>
+    <hr>
+    <!--
+        priority: 
+        External < Internal < Inline
+     -->
+    <h1>If we target same Element with Inline, Internal and External CSS:</h1>
+    <h2>Then the priority follows: External < Internal < Inline</h2>
+    <h3>External CSS has <strong>least</strong> priority & Inline CSS has <strong>hightest</strong> priority</h3>
+    <h1 class="heading" style="background-color: red; padding: 30px; color: white;text-align: center;">Element targeted by Inline, Internal and External CSS</h1>
+    <p>So in this case <strong>Inline CSS</strong> Wins</p>
+</body>
+</html>

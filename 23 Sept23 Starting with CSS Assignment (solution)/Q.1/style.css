@@ -1,0 +1,14 @@
+#External_css{
+    background-color: blue;
+    color: white;
+    width: 33%;
+    text-align: center;
+    float: left;
+}
+
+.heading{
+    background-color: blue;
+    padding: 30px;
+    color: white;
+    text-align: center;
+}
